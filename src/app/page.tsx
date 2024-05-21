@@ -3,9 +3,12 @@ import { ImageHeroSection } from "@/components/ImageHeroSection";
 import { MobileTestimonial } from "@/components/MobileTestimonial";
 import { Navbar } from "@/components/Navbar";
 import { Services } from "@/components/Service";
-import { StepToBuild } from "@/components/StepsToBuild";
+import {FaqSection} from "@/components/FaqSection"
+// import { StepToBuild } from "@/components/StepsToBuild";
+
 import { Testimonial } from "@/components/Testimonial";
 import Image from "next/image";
+import { PortfolioParallax } from "@/components/Portfolio-parallax";
 
 export default function Home() {
   return (
@@ -18,7 +21,13 @@ export default function Home() {
       
       <Testimonial/> 
       <MobileTestimonial/> 
+      <PortfolioParallax/>
+      <FaqSection/>
       <Services/>
+      
+      
+      
+      
 
       
     </main>

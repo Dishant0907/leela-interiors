@@ -47,9 +47,9 @@ export const Services = () => {
 
       <div className="flex justify-center mx-3 ">
 
-      <h2 className="text-3xl mx-1 font-bold text-white text-center mb-[4rem]" >Services </h2>
-      <h2 className="text-3xl mx-1 text-emerald-500 font-bold text-center mb-[4rem]" >we</h2>
-      <h2 className="text-3xl  mx-1 font-bold text-white text-center mb-[4rem]" > provide </h2>
+      <h2 className="text-4xl mx-1 font-bold text-white text-center mb-[4rem]" >why </h2>
+      <h2 className="text-4xl mx-1 text-emerald-500 font-bold text-center mb-[4rem]" >choose</h2>
+      <h2 className="text-4xl  mx-1 font-bold text-white text-center mb-[4rem]" > us </h2>
 
 
       
@@ -69,7 +69,7 @@ export const Services = () => {
               <p className="text-base sm:text-xl font-bold  mt-4 mb-2 text-neutral-200">
                 {service.title}
               </p>
-              <p className="text-sm  text-neutral-400">
+              <p className="text-sm  text-emerald-200">
                 {service.description}
               </p>
             </BackgroundGradient>

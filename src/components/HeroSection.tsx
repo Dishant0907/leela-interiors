@@ -1,10 +1,13 @@
 'use client'
 
 import { Spotlight } from "@/components/ui/Spotlight"
-import { Button } from "@/components/ui/moving-border";
+
 import Link from "next/link"
 // import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
+import { FlipWords } from "./ui/flip-words";
+
+import { Button } from "@/components/ui/moving-border";
  
 const phoneNumber ="+919873729773"
 
@@ -29,6 +32,27 @@ const words = [
   },
 ];
 
+const Atrractivewords = [
+  "Kitchen",
+  "Space",
+  "Haven",
+  "Hub",
+  // "Area",
+  // "Domain",
+  // "Territory",
+  // "Nook",
+  // "Corner",
+  // "Sanctuary",
+  // "Zone",
+  // "Studio",
+  // "Workshop",
+  // "Realm",
+  // "Alcove",
+  // "Arena"
+  
+];
+
+console.log(words);
 
 
 const content = [
@@ -62,9 +86,9 @@ export const HeroSection = () => {
       <div className=" p-4 relative z-10 w-full text-center">
         <Spotlight
           className="-top-40 left-0 md:left-80 md:-top-20 sm-android:-top-2"
-          fill="white"
+          fill="green"
         />
-        <h1 className="mt-[14rem]   md:mt-[22rem] ml[7rem] text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Design Your <span className="text-emerald-500 "> Kitchen,</span>  your way</h1>
+        <h1 className="mt-[14rem]   md:mt-[22rem] ml[7rem] text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">Design Your <span className="text-emerald-500 "> <FlipWords words={Atrractivewords} />  </span><br />  your way</h1>
 
         {/* <div className="mt-[23rem] md:mt-[22rem]  sm-android:m-9 sm-android:mt-[8rem]   text-4xl md:text-7xl font-bold  text-center flex justify-center  text-transparent  ">
         <TypewriterEffectSmooth  words={words} />

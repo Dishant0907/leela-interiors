@@ -3,15 +3,35 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 const testimonials = [
     {
       quote:
-        "Collaborating with Terresorca has been an absolute joy. Their unwavering support, creativity, and dedication to our brand have elevated Yuka to new heights. Together, we've crafted exceptional products, provided top-notch service, and made sustainability a priority. Terresorca's customer-centric approach has driven sales and customer loyalty. Our shared vision of excellence is driving our success, and I'm excited for what the future holds.",
-      name: "Yuvraj Bansal",
-      title: "Founder at Yuka",
+        "Leela Interiors did an outstanding job on our modular kitchen. The design is both sleek and highly functional, making cooking an absolute joy. Their team was professional, attentive to our needs, and completed the project on time. We couldn't be happier!",
+      name: "Harsh Singh",
+      title: "Home Owner",
     },
     
     {
-      quote: "Partnering with Terresorca was a game-changer for our business. Their innovative strategies and unwavering support propelled us to new heights. Since joining forces, our sales have seen a remarkable surge, exceeding all expectations.",
-      name: "Sanjay Singh",
-      title: "Founder at TechOrca",
+      quote: "Our new modular kitchen from Leela Interiors is amazing! The layout is perfect, and the quality of the materials used is top-notch. Their designers took our ideas and made them even better, creating a kitchen that is both beautiful and practical.",
+      name: "Vikram Desai ",
+      title: "Home Owner",
+    },
+
+   
+    {
+      quote: 
+      "Leela Interiors transformed our outdated kitchen into a modern, efficient space. The modular design has made a huge difference in our daily routine. The craftsmanship and attention to detail are impeccable. Highly recommend their services!",
+      name: "Kunal Reddy ",
+      title: "Home Owner",
+    },
+    {
+      quote: 
+      "From design to installation, Leela Interiors exceeded our expectations. Our modular kitchen is a blend of modern aesthetics and functionality. The project was completed on time, and the quality is exceptional. We highly recommend them!",
+      name: "Nisha Mehta ",
+      title: "Home Owner",
+    },
+    {
+      quote: 
+      "We are thrilled with our new modular kitchen from Leela Interiors. The team was incredibly professional and provided excellent customer service throughout the project. The final result is a stylish, functional kitchen that has significantly enhanced our home.",
+      name: "Raj Patel ",
+      title: "Home Owner",
     },
     
   ];
@@ -20,7 +40,7 @@ const testimonials = [
 export const Testimonial = () => {
     return (
         <div className="h-[40rem] rounded-md flex flex-col hidden md:block antialiased bg-black  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <h2 className="text-3xl font-bold text-center mb-8">Hear our Harmony: Voices of success</h2>
+            <h2 className="text-3xl font-bold text-center text-white mb-8">Hear our Harmony: <span className="text-emerald-500">Voices of success</span></h2>
             <div className="flex justify-center w-full overflow-hidden pz-4 sm:pz-6 lg:px-8">
             <InfiniteMovingCards
           items={testimonials}

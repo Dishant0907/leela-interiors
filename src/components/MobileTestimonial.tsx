@@ -4,7 +4,7 @@ import { cn } from "@/utils/cn";
 export function MobileTestimonial() {
   return (
     <>
-        <h1 className="text-white text-3xl font-bold mx-[2rem] mt-12 text-center">Words from Our Satisfied Clients</h1>
+        <h1 className="text-white text-3xl  sm:hidden font-bold mx-[2rem] mt-12 text-center">Words from Our Satisfied Clients</h1>
     <div className="h-[22rem] bg md:hidden flex items-center justify-center w-full">
       <CardStack items={CARDS} />
     </div>
@@ -35,25 +35,21 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Manu Arora",
-    designation: "Senior Software Engineer",
+    name: "Harsh Singh",
+    designation: "Home Owner",
     content: (
       <p>
-        These cards are amazing, <Highlight>I want to use them</Highlight> in my
-        project. Framer motion is a godsend ngl tbh fam 🙏
+        Leela Interiors did an outstanding job on our modular kitchen.  Their team was professional, attentive to our needs, and completed the project on time. We could not be happier! 
       </p>
     ),
   },
   {
     id: 1,
-    name: "Elon Musk",
-    designation: "Senior Shitposter",
+    name: "Vikram Desai",
+    designation: "Home Owner",
     content: (
       <p>
-        I dont like this Twitter thing,{" "}
-        <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-        would like to call it <Highlight>X.com</Highlight> so that it can easily
-        be confused with adult sites.
+        Our new modular kitchen from Leela Interiors is amazing! The layout is perfect, and the quality of the materials used is top-notch , creating a kitchen that is both beautiful and practical.
       </p>
     ),
   },
@@ -63,11 +59,7 @@ const CARDS = [
     designation: "Manager Project Mayhem",
     content: (
       <p>
-        The first rule of
-        <Highlight>Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        Leela Interiors transformed our outdated kitchen into a modern, efficient space. The modular design has made a huge difference in our daily routine. The craftsmanship and attention to detail are impeccable. Highly recommend their services!
       </p>
     ),
   },
