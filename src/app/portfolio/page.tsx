@@ -1,18 +1,43 @@
-import Image from "next/image"
+"use client"
+import * as React from "react";
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+import PhotoAlbum from "react-photo-album";
 
- const  AspectRatioDemo = () => {
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+
+import Photos from "@/components/photos";
+import { Navbar } from "@/components/Navbar";
+
+export default function Portfolio() {
+  const [index, setIndex] = useState(-1);
+
   return (
-    <AspectRatio ratio={16 / 9} className="bg-muted">
-      <Image
-        src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
-        alt="Photo by Drew Beamer"
-        fill
-        className="rounded-md object-cover"
-      />
-    </AspectRatio>
-  )
-}
+    <>
+    <Navbar/>
+    <h1 className="text-black text-5xl ml-[1rem] mb-[1rem] mt-[9rem] md:text-8xl font-bold md:ml-[7rem] md:mb-[4rem]  md:mt-[9rem]">Checkout Our Work.</h1>
+      <div className="md:block hidden px-[7rem]  pt-6  ">
+      <PhotoAlbum photos={Photos} layout="columns" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
+      </div>
 
-export default AspectRatioDemo;
+
+      <div className=" block md:hidden p-3">
+      <PhotoAlbum photos={Photos} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
+      </div>
+      <Lightbox
+        slides={Photos}
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        // enable optional lightbox plugins
+        plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+      />
+    </>
+  );
+}

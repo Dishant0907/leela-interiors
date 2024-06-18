@@ -9,6 +9,8 @@ import {FaqSection} from "@/components/FaqSection"
 import { Testimonial } from "@/components/Testimonial";
 import Image from "next/image";
 import { PortfolioParallax } from "@/components/Portfolio-parallax";
+import { WhyChooseUs } from "@/components/why-choose-us";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export default function Home() {
   return (
@@ -16,14 +18,18 @@ export default function Home() {
       <Navbar/>
       <HeroSection/>
       
-      {/* <ImageHeroSection/> */}
-      {/* <StepToBuild/> */}
       
       <Testimonial/> 
       <MobileTestimonial/> 
       <PortfolioParallax/>
+
+      {/* <Services/> */}
+      
+      <WhyChooseUs/>
+      
       <FaqSection/>
-      <Services/>
+      <VideoPlayer/>
+
       
       
       

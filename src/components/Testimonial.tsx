@@ -39,8 +39,8 @@ const testimonials = [
 
 export const Testimonial = () => {
     return (
-        <div className="h-[40rem] rounded-md flex flex-col hidden md:block antialiased bg-black  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
-            <h2 className="text-3xl font-bold text-center text-white mb-8">Hear our Harmony: <span className="text-emerald-500">Voices of success</span></h2>
+        <div className="h-[40rem] mt-[7rem] rounded-md flex flex-col hidden md:block antialiased bg-black  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+            <h2 className="text-5xl font-bold text-center text-white mb-8">Hear our Harmony: <span className="text-emerald-500">Voices of success</span></h2>
             <div className="flex justify-center w-full overflow-hidden pz-4 sm:pz-6 lg:px-8">
             <InfiniteMovingCards
           items={testimonials}

@@ -58,7 +58,7 @@ export const products = [
     title: "Leela Interiors",
     link: "",
     thumbnail:
-      "/portfolio/PO-7.jpeg",
+      "/portfolio/PO-4.jpeg",
   },
   {
     title: "Leela Interiors",
@@ -89,7 +89,7 @@ export const products = [
     title: "Leela Interiors",
     link: "",
     thumbnail:
-      "/portfolio/PO-12.jpeg",
+      "/portfolio/PO-14.jpeg",
   },
   {
     title: "Leela Interiors",
